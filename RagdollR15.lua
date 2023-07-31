@@ -1,5 +1,4 @@
 --[[
-	Ragdoll Module for SYNTIN
 	Author: KasperPajak
 	Date: 08/15/22
 	Description:
@@ -23,7 +22,7 @@
 		ragdoll:Disable()
 		> Stops ragdolling and resets the player/character
 		
-	Methods:
+	Events:
 	
 		ragdoll.Ragdolled(boolean)
 		> Fires when a player's ragdoll state changes
