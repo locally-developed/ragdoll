@@ -17,14 +17,14 @@ ragdoll.Ragdolled(boolean isRagdolled): RBXScriptSignal
 
 Example:
 ```lua
-RagdollR15 = require(RagdollR15)
+Ragdoll = require(RagdollR15)
 
-ragdoll = RagdollR15.new(game:GetService("PlayerService").LocalPlayer)
+ragdoller = Ragdoll.new(game:GetService("PlayerService").LocalPlayer)
 
-ragdoll.Ragdolled.Event:Connect(function(isRagdolled)
+ragdoller.Ragdolled:Connect(function(isRagdolled)
     task.wait(3)
-    if isRagdolled then ragdoll:Disable() end
+    if isRagdolled then ragdoller:Disable() end
 end)
 
-ragdoll:Enable()
+ragdoller:Enable()
 ```
